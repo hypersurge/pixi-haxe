@@ -1,7 +1,7 @@
 package pixi.plugins.projection;
 
 @:native("PIXI.projection.Text3d")
-extern class Text3d extends pixi.core.text.Text {
+extern class Text3d extends pixi.plugins.projection.mixins.Text {
 	function new(?text:String, ?style:Dynamic, ?canvas:js.html.CanvasElement);
 	var proj : Projection3d;
 	var vertexData2d : js.lib.Float32Array;

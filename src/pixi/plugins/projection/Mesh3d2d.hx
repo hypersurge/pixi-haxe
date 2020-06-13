@@ -1,7 +1,7 @@
 package pixi.plugins.projection;
 
 @:native("PIXI.projection.Mesh3d2d")
-extern class Mesh3d2d extends pixi.mesh.Mesh {
+extern class Mesh3d2d extends pixi.plugins.projection.mixins.Mesh {
 	function new(geometry:Dynamic, shader:Dynamic, state:Dynamic, ?drawMode:Float);
 	var vertexData2d : js.lib.Float32Array;
 	var proj : Projection3d;
